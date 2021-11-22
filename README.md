@@ -4,4 +4,4 @@ learning GITHUB
 now i know how to push modifications to github
 now i know how to pull modifications to local
 
-i insert ohter line
+i insert other line
