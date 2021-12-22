@@ -1,7 +1,3 @@
-# link remoto - local
-learning GITHUB
-
-now i know how to push modifications to github
-now i know how to pull modifications to local
-
-i insert other line
+# CRUD to reseearch laboratoy
+in the bootcamp of DIO I learned how to create a CRUD.
+I will use what I learned to create a CRUD to register the reagents, equipaments and materials of my research laboratory, where I do scientific initiation
