@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Jonas\\Documents\\programação\\Desenvolvedor-Back-End\\cloneProjeto\\dio-dotnet-poo-lab-2-master\\DIO.Series.csproj",
-      "projectName": "DIO.Series",
-      "projectPath": "D:\\Users\\Jonas\\Documents\\programação\\Desenvolvedor-Back-End\\cloneProjeto\\dio-dotnet-poo-lab-2-master\\DIO.Series.csproj",
+      "projectUniqueName": "D:\\Users\\Jonas\\Documents\\programação\\Desenvolvedor-Back-End\\CRUD\\CRUD\\Laboratory.csproj",
+      "projectName": "Laboratory",
+      "projectPath": "D:\\Users\\Jonas\\Documents\\programação\\Desenvolvedor-Back-End\\CRUD\\CRUD\\Laboratory.csproj",
       "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Jonas\\Documents\\programação\\Desenvolvedor-Back-End\\cloneProjeto\\dio-dotnet-poo-lab-2-master\\obj\\",
+      "outputPath": "D:\\Users\\Jonas\\Documents\\programação\\Desenvolvedor-Back-End\\CRUD\\CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

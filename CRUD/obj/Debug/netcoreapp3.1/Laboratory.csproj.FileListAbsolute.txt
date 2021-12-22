@@ -1,0 +1,14 @@
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\bin\Debug\netcoreapp3.1\Laboratory.exe
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\bin\Debug\netcoreapp3.1\Laboratory.deps.json
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\bin\Debug\netcoreapp3.1\Laboratory.runtimeconfig.json
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\bin\Debug\netcoreapp3.1\Laboratory.runtimeconfig.dev.json
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\bin\Debug\netcoreapp3.1\Laboratory.dll
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\bin\Debug\netcoreapp3.1\Laboratory.pdb
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.csproj.AssemblyReference.cache
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.AssemblyInfoInputs.cache
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.AssemblyInfo.cs
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.csproj.CoreCompileInputs.cache
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.dll
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.pdb
+D:\Users\Jonas\Documents\programação\Desenvolvedor-Back-End\CRUD\CRUD\obj\Debug\netcoreapp3.1\Laboratory.genruntimeconfig.cache
