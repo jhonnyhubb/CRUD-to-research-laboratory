@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 
-namespace DIO.Series.Interfaces
+namespace DIO.Laboratory.Interfaces
 {
-    public interface IRepository<T>
+    public interface IRepository<Item>
     {
-        List<T> List();
-        T ReturnId(int id);        
-        void Insert(T entidade);        
+        List<Item> List();
+        Item ReturnId(int id);        
+        void Insert(Item entidade);        
         void Delete(int id);        
-        void Update(int id, T entidade);
+        void Update(int id, Item entidade);
         int NextId();
     }
 }

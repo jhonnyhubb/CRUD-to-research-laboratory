@@ -1,4 +1,4 @@
-namespace DIO.Series
+namespace DIO.Laboratory
 {
     public abstract class EntityBase
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace DIO.Series
+namespace DIO.Laboratory
 {
     class Program
     {
-        static SerieRepository repository = new SerieRepository();
+        static LaboratoryRepository repository = new LaboratoryRepository();
         static void Main(string[] args)
         {
             string optionUser = ObtainOptionUser();
@@ -14,19 +14,19 @@ namespace DIO.Series
 				switch (optionUser)
 				{
 					case "1":
-						ListSeries();
+						ListItens();
 						break;
 					case "2":
-						InsertSerie();
+						InsertItem();
 						break;
 					case "3":
-						UpdateSerie();
+						UpdateItem();
 						break;
 					case "4":
-						DeleteSerie();
+						DeleteItem();
 						break;
 					case "5":
-						ViewSerie();
+						ViewItens();
 						break;
 					case "C":
 						Console.Clear();
@@ -43,113 +43,113 @@ namespace DIO.Series
 			Console.ReadLine();
         }
 
-        private static void DeleteSerie()
+        private static void DeleteItem()
 		{
-			Console.Write("Insert the serie Id: ");
-			int indexSerie = int.Parse(Console.ReadLine());
+			Console.Write("Insert the item Id: ");
+			int indexItem = int.Parse(Console.ReadLine());
 
-			repository.Delete(indexSerie);
+			repository.Delete(indexItem);
 		}
 
-        private static void ViewSerie()
+        private static void ViewItens()
 		{
-			Console.Write("Insert the serie Id: ");
-			int indexSerie = int.Parse(Console.ReadLine());
+			Console.Write("Insert the item Id: ");
+			int indexItem = int.Parse(Console.ReadLine());
 
-			var serie = repository.ReturnId(indexSerie);
+			var item = repository.ReturnId(indexItem);
 
-			Console.WriteLine(serie);
+			Console.WriteLine(item);
 		}
 
-        private static void UpdateSerie()
+        private static void UpdateItem()
 		{
-			Console.Write("Insert the serie Id: ");
-			int indexSerie = int.Parse(Console.ReadLine());
+			Console.Write("Insert the item Id: ");
+			int indexItem = int.Parse(Console.ReadLine());
 
-			foreach (int i in Enum.GetValues(typeof(Gender)))
+			foreach (int i in Enum.GetValues(typeof(ItemType)))
 			{
-				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Gender), i));
+				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(ItemType), i));
 			}
-			Console.Write("Enter the gender between the options above: ");
-			int inputGender = int.Parse(Console.ReadLine());
+			Console.Write("Enter the item type between the options above: ");
+			int inputItemType = int.Parse(Console.ReadLine());
 
-			Console.Write("Enter the serie title: ");
-			string inputTitle = Console.ReadLine();
+			Console.Write("Enter the name of item: ");
+			string inputItemName = Console.ReadLine();
 
-			Console.Write("Enter the year of start the serie: ");
+			Console.Write("Enter the year that we buy the item: ");
 			int inputYear = int.Parse(Console.ReadLine());
 
-			Console.Write("Enter the serie description: ");
+			Console.Write("Enter the item description: ");
 			string inputDescription = Console.ReadLine();
 
-			Serie updateSerie = new Serie(id: indexSerie,
-										gender: (Gender)inputGender,
-										title: inputTitle,
+			Item updateItem = new Item(id: indexItem,
+										itemType: (ItemType)inputItemType,
+										itemName: inputItemName,
 										year: inputYear,
 										description: inputDescription);
 
-			repository.Update(indexSerie, updateSerie);
+			repository.Update(indexItem, updateItem);
 		}
-        private static void ListSeries()
+        private static void ListItens()
 		{
-			Console.WriteLine("List series");
+			Console.WriteLine("List itens");
 
 			var list = repository.List();
 
 			if (list.Count == 0)
 			{
-				Console.WriteLine("No série registered.");
+				Console.WriteLine("No item registered.");
 				return;
 			}
 
-			foreach (var serie in list)
+			foreach (var item in list)
 			{
-                var deleted = serie.returnDeleted();
+                var deleted = item.returnDeleted();
                 
-				Console.WriteLine("#ID {0}: - {1} {2}", serie.returnId(), serie.returnTitle(), (deleted ? "*Deleted*" : ""));
+				Console.WriteLine("#ID {0}: - {1} {2}", item.returnId(), item.returnItemName(), (deleted ? "*Deleted*" : ""));
 			}
 		}
 
-        private static void InsertSerie()
+        private static void InsertItem()
 		{
-			Console.WriteLine("Insert new serie: ");
+			Console.WriteLine("Insert new item: ");
 
-			foreach (int i in Enum.GetValues(typeof(Gender)))
+			foreach (int i in Enum.GetValues(typeof(ItemType)))
 			{
-				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Gender), i));
+				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(ItemType), i));
 			}
-			Console.Write("Enter the gender between the options above: ");
-			int inputGender = int.Parse(Console.ReadLine());
+			Console.Write("Enter the item type between the options above: ");
+			int inputItemType = int.Parse(Console.ReadLine());
 
-			Console.Write("Enter the serie title: ");
-			string inputTitle = Console.ReadLine();
+			Console.Write("Enter the name of item: ");
+			string inputItemName = Console.ReadLine();
 
-			Console.Write("Enter the year of start the serie: ");
+			Console.Write("Enter the year that we buy the item: ");
 			int inputYear = int.Parse(Console.ReadLine());
 
-			Console.Write("Enter the serie description: ");
+			Console.Write("Enter the item description: ");
 			string inputDescription = Console.ReadLine();
 
-			Serie newSerie = new Serie(id: repository.NextId(),
-										gender: (Gender)inputGender,
-										title: inputTitle,
+			Item newItem = new Item(id: repository.NextId(),
+										itemType: (ItemType)inputItemType,
+										itemName: inputItemName,
 										year: inputYear,
 										description: inputDescription);
 
-			repository.Insert(newSerie);			
+			repository.Insert(newItem);			
 		}
 
         private static string ObtainOptionUser()
         {
             System.Console.WriteLine();
-            System.Console.WriteLine("Jhonny Séries at your service!!!");
-            System.Console.WriteLine("which is your wish?");
+            System.Console.WriteLine("SUPRAMMAT Laboratory warehouse!!!");
+            System.Console.WriteLine("Which is your wish?");
 
-            System.Console.WriteLine("1- list series");
-            System.Console.WriteLine("2- Insert new serie");
-            System.Console.WriteLine("3- Update serie");
-            System.Console.WriteLine("4- Remove serie");
-            System.Console.WriteLine("5- View serie");
+            System.Console.WriteLine("1- list itens");
+            System.Console.WriteLine("2- Insert new item");
+            System.Console.WriteLine("3- Update item");
+            System.Console.WriteLine("4- Remove item");
+            System.Console.WriteLine("5- View item");
             System.Console.WriteLine("C- Clean the window");
             System.Console.WriteLine("X- exit");
             

@@ -1,19 +1,11 @@
-namespace DIO.Series
+namespace DIO.Laboratory
 {
-	public enum Gender
+	public enum ItemType
     {
-        Action = 1,
-        Adventure = 2,
-        Comedy = 3,
-        Documentary = 4,
-        Drama = 5,
-        Spy = 6,
-        Western = 7,
-        Fantasy = 8,
-        SciFi = 9,
-        Musical = 10,
-        Romance = 11,
-        Thriller = 12,
-        Horror = 13,
+        Reagents = 1,
+        Binders = 2,
+        Solvents = 3,
+        Equipaments = 4,
+        Glassware = 5,
     }
 }

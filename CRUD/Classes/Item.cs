@@ -1,22 +1,24 @@
 using System;
+using DIO.Laboratory;
+using DIO.Laboratory.Interfaces;
 
-namespace DIO.Series
+namespace DIO.Laboratory
 {
-    public class Serie : EntityBase
+    public class Item : EntityBase
     {
         // Attributes
-		private Gender Gender { get; set; }
-		private string Title { get; set; }
+		private ItemType ItemType { get; set; }
+		private string ItemName { get; set; }
 		private string Description { get; set; }
 		private int Year { get; set; }
         private bool Deleted {get; set;}
 
         // Métodos
-		public Serie(int id, Gender gender, string title, string description, int year)
+		public Item(int id, ItemType itemType, string itemName, string description, int year)
 		{
 			this.Id = id;
-			this.Gender = gender;
-			this.Title = title;
+			this.ItemType = itemType;
+			this.ItemName = itemName;
 			this.Description = description;
 			this.Year = year;
             this.Deleted = false;
@@ -26,17 +28,17 @@ namespace DIO.Series
 		{
 			// Environment.NewLine https://docs.microsoft.com/en-us/dotnet/api/system.environment.newline?view=netcore-3.1
             string regress = "";
-            regress += "Gender: " + this.Gender + Environment.NewLine;
-            regress += "Title: " + this.Title + Environment.NewLine;
+            regress += "Item type: " + this.ItemType + Environment.NewLine;
+            regress += "Item name: " + this.ItemName + Environment.NewLine;
             regress += "Description: " + this.Description + Environment.NewLine;
-            regress += "Beginning year: " + this.Year + Environment.NewLine;
+            regress += "We buy this item at: " + this.Year + Environment.NewLine;
             regress += "Deleted: " + this.Deleted;
 			return regress;
 		}
 
-        public string returnTitle()
+        public string returnItemName()
 		{
-			return this.Title;
+			return this.ItemName;
 		}
 
 		public int returnId()
